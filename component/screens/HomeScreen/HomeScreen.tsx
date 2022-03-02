@@ -15,7 +15,6 @@
     async function fetchJSONAsync(): Promise<void> {
       const url = BASEURL + endPoint.MainCategory
       let response = await fetch(url, {
-        //This is latest change of my code
         method: 'GET',
         headers: HEADER,
       });
@@ -61,7 +60,7 @@
           console.log(x, "You have Selected the category")
         }}
         buttonTextAfterSelection={(item, index) => {
-          // This is Update picture branch code
+
           return item.category_name // shows the data after selecting the options
         }}
         rowTextForSelection={(item, index) => {
