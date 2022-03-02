@@ -61,7 +61,7 @@
           console.log(x, "You have Selected the category")
         }}
         buttonTextAfterSelection={(item, index) => {
-
+          // This is Update picture branch code
           return item.category_name // shows the data after selecting the options
         }}
         rowTextForSelection={(item, index) => {
