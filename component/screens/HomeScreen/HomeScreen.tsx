@@ -15,6 +15,7 @@
     async function fetchJSONAsync(): Promise<void> {
       const url = BASEURL + endPoint.MainCategory
       let response = await fetch(url, {
+        //This is latest change of my code
         method: 'GET',
         headers: HEADER,
       });
